@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+margin-left: 2%;
+    display: flex;
+    min-height: 100vh;
+    background-color:black;}
+
+#next{
+    display: flex;
+    position: fixed;
+    align-items: right;
+    justify-content: center;
+    margin-top: 0.5%;
+    margin-left:80%;
+    animation: click 8s;
+    animation-delay: 0s;
+    outline: 0;
+    border: 0;  
+    
+}
+
+@keyframes click {
+    from {
+        opacity: 0;
+        transform: translatez(1) scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatez(0) scale(1);
+    }
+
+}
+
+
+h2
+{ 
+    position: absolute;
+    margin-top: 1%;
+    text-align: left;
+    font-size: 4vw;
+    color: black;
+    -webkit-text-stroke: 0.05vw white;
+    text-transform: uppercase;   
+}
+
+h2::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+
+}
+
+p
+{
+    position: absolute;
+    margin-top:6.5%;
+    text-align: left;
+    font-size: 2vw;
+    color: black;
+    -webkit-text-stroke: 0.05vw white;
+    text-transform: uppercase;   
+}
+
+p::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+}
+
+
+
+
+h3
+{
+    position: absolute;
+    margin-top: 28%;
+    text-align: left;
+    font-size: 4vw;
+    color: black;
+    -webkit-text-stroke: 0.05vw white;
+    text-transform: uppercase ;   
+}
+
+h3::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 8s linear infinite;
+}
+
+
+h4
+{
+    position: absolute;
+    margin-top: 34%;
+    text-align: left;
+    font-size: 4vw;
+    color: black;
+    -webkit-text-stroke: 0.05vw white;
+    text-transform: uppercase ;   
+}
+
+h4::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 9s linear infinite;
+}
+
+h5
+{
+    position: absolute;
+    margin-top: 40%;
+    text-align: left;
+    font-size: 4vw;
+    color: black;
+    -webkit-text-stroke: 0.05vw white;
+    text-transform: uppercase ;   
+}
+
+h5::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 11s linear  infinite;
+}
+

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.text_box{
+    text-align: center;
+    position: relative;
+    font-size: 2vw;
+    color: white;
+    margin-top: 17%;
+
+  }
+  
+  .blink {
+    animation: blink 0.5s infinite;
+    font-size: 2vw;
+    color: white;
+
+  }
+  
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
+  }
